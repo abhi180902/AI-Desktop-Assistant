@@ -71,8 +71,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('abhisheksangamad1802@gmail.com', 'fkyc aftt ucje vzuv')
-    server.sendmail('abhisheksangamad1802@gamil.com', to, content)
+    server.login('sender mail', 'sender email password')
+    server.sendmail('reciver mail', to, content)
     server.close()
 
 def WishMe():   # wishes us according to the time
@@ -141,14 +141,14 @@ if __name__ == '__main__':
 
         elif 'open vs code' in query:
             speak('opening vs code')
-            vscodePath = 'C:\\Users\\PRASAD SANGAMAD\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+            vscodePath = '---------------\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'  # path of the vs code exe file
             os.startfile(vscodePath)
 
         elif 'email to abhishek' in query:
             try:
                 speak('What should i do:')
                 content = takeCommand()
-                to = 'abhisheksangamad2002@gmail.com'
+                to = 'sender mail'
                 sendEmail(to, content)
                 speak("Email has been sent successfully")
             except Exception as e:
@@ -157,11 +157,11 @@ if __name__ == '__main__':
 
         elif 'open my document' in query:
             # Example usage: Replace 'path/to/your/document.docx' with the actual file path
-            file_path = "D:\\dbms\\croprecommender.docx"
+            file_path = "---------\croprecommender.docx"  # document to be opened
             open_word_document(file_path)
 
         elif 'open my photos' in query:
-            folder_path = 'D:\\my photos'
+            folder_path = 'D:\\my photos' 
             open_images_in_folder(folder_path)
 
         # todo: add a feature to play a specific song
