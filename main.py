@@ -18,7 +18,7 @@ def speak(audio):
     engine.runAndWait()
 
 def play_song(song_name):
-    music_folder = "D:\\my_music"
+    music_folder = "-----\my_music"
     song_found = False
 
     # Get a list of all files in the music folder
@@ -71,7 +71,7 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('sender mail', 'sender email password')
+    server.login('sender mail', 'sender email password or generated key password')
     server.sendmail('reciver mail', to, content)
     server.close()
 
@@ -121,7 +121,7 @@ if __name__ == '__main__':
                 speak(f"opening {site[0]} ")
                 webbrowser.open(site[1])
 
-        if 'wikipedia' in query:
+        if 'wikipedia' in query:    # ask like ex: who is virat kohli according to wikipedia
             speak('searching wikipedia...')
             query = query.replace('wikipedia','')  # for removing wikipedia.
             result = wikipedia.summary(query, sentences=2)  # sentences depends on user choice like how many lines he wants print from wikipedia.
@@ -130,7 +130,7 @@ if __name__ == '__main__':
             speak(result)
 
         elif 'play music' in query:
-            music_dir = 'D:\\my_music'
+            music_dir = '------\my_music'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
@@ -161,7 +161,7 @@ if __name__ == '__main__':
             open_word_document(file_path)
 
         elif 'open my photos' in query:
-            folder_path = 'D:\\my photos' 
+            folder_path = '------\my photos' 
             open_images_in_folder(folder_path)
 
         # todo: add a feature to play a specific song
