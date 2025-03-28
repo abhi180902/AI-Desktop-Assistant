@@ -1,6 +1,17 @@
 # AI-Desktop-Assistant
-AI Desktop Assistant that aims to develop an intelligent software system that functions as a personalized assistant for desktop users. 
+AI Desktop Assistant is a Python-based intelligent virtual assistant designed to perform various desktop tasks through voice commands. It uses speech recognition, text-to-speech synthesis, and integrations with system applications and online services to enhance user productivity and interaction and that functions as a personalized assistant for desktop users.
 
-Leveraging artificial intelligence (AI) algorithms and natural language processing(NLP) techniques ( Speech Recognition (Speech-to-Text), Information Retrieval (viaWikipedia API), Text andText-to-Speech (TTS). By talking to the assistant, users can ask questions, get recommendations, andreceive help without needing to navigate complex menus or search through piles of information.
+Voice Interaction: Uses speech_recognition for capturing commands and pyttsx3 for responding with spoken feedback.
+Personalized Greetings: Greets the user based on the current time of day
+Web Automation: Opens frequently used websites like YouTube, Google, Stack Overflow, etc.
+Wikipedia Search: Fetches and reads brief summaries based on user queries.
+Music Playback: Plays specific songs or the first available track from a defined music directory.
+File Handling:
+Opens Word documents.
+Displays images from a specified folder.
+Email Functionality: Sends emails using SMTP (Gmail configured).
+System Integration: Launches applications like Visual Studio Code.
+Time Telling: Announces the current system time.
+Exit Command: Gracefully exits the program when instructed.
 
 Roles & responsibility: Led the development of an AI desktop assistant using Python, NLP, and speech recognition, overseeing end-to-end project execution from design to deployment while coordinating team efforts.
