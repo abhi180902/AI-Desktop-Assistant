@@ -13,5 +13,3 @@ Email Functionality: Sends emails using SMTP (Gmail configured).
 System Integration: Launches applications like Visual Studio Code.
 Time Telling: Announces the current system time.
 Exit Command: Gracefully exits the program when instructed.
-
-Roles & responsibility: Led the development of an AI desktop assistant using Python, NLP, and speech recognition, overseeing end-to-end project execution from design to deployment while coordinating team efforts.
